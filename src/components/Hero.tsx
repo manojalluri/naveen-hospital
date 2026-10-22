@@ -101,40 +101,38 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppointmentModal }) => {
             {/* Ambient Multi-colour Glow behind the Arch */}
             <div className="absolute inset-0 bg-gradient-to-tr from-brand-pink/20 via-brand-green/15 to-brand-blue/15 rounded-full blur-3xl transform -z-10 scale-95 pointer-events-none" />
 
-            {/* Main Rainbow Medical Arch Doctors Artwork */}
+            {/* Main Rainbow Medical Arch Doctors Artwork - Merged into Background */}
             <div className="relative w-full max-w-lg mx-auto flex flex-col items-center">
               
               <img 
                 src="/images/Back-to-Back Doctors in a Healthcare Arch.png" 
                 alt="Dr. Keerthi S. and Dr. J. Naveen Kumar - Naveen Multi-Speciality Hospital Hindupur" 
-                className="w-full h-auto max-h-[520px] object-contain drop-shadow-2xl transition-transform duration-300 hover:scale-[1.01]"
+                className="w-full h-auto max-h-[520px] object-contain mix-blend-multiply [mask-image:linear-gradient(to_bottom,black_85%,transparent_100%)] transition-transform duration-300 hover:scale-[1.01]"
                 loading="eager"
               />
 
-              {/* Bottom Identification Strip matching the Pink & Green Arches */}
-              <div className="w-full -mt-2 sm:-mt-4 relative z-10 bg-white/95 backdrop-blur-md rounded-2xl p-3.5 sm:p-4 shadow-xl border border-slate-200/90 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+              {/* Identification Badges - Merged Naturally into Hero Background */}
+              <div className="w-full -mt-5 sm:-mt-8 relative z-10 flex flex-row items-center justify-center gap-2 sm:gap-4 px-2">
                 
-                {/* Dr. Keerthi S. (Paediatrics - Pink Arch Match) */}
-                <div className="flex items-center gap-2.5 w-full sm:w-auto">
-                  <div className="w-8 h-8 rounded-full bg-brand-pink-light border border-brand-pink/50 flex items-center justify-center font-extrabold text-brand-pink text-xs shrink-0 shadow-xs">
+                {/* Dr. Keerthi S. (Paediatrics - Pink Match) */}
+                <div className="flex-1 max-w-[215px] flex items-center gap-2 px-3 py-2 rounded-xl bg-white/85 backdrop-blur-xs border border-brand-pink/25 shadow-xs">
+                  <div className="w-7 h-7 rounded-full bg-brand-pink-light border border-brand-pink/40 flex items-center justify-center font-extrabold text-brand-pink text-[11px] shrink-0">
                     DK
                   </div>
-                  <div>
-                    <div className="font-heading font-extrabold text-slate-900 leading-tight">Dr. Keerthi S.</div>
-                    <div className="text-[11px] text-brand-pink font-bold">Paediatrician &amp; Neonatologist</div>
+                  <div className="min-w-0">
+                    <div className="font-heading font-extrabold text-slate-900 text-xs truncate">Dr. Keerthi S.</div>
+                    <div className="text-[10px] text-brand-pink font-bold truncate">Paediatrician &amp; Neonatologist</div>
                   </div>
                 </div>
 
-                <div className="hidden sm:block h-8 w-px bg-slate-200" />
-
-                {/* Dr. J. Naveen Kumar (Orthopaedics - Green Arch Match) */}
-                <div className="flex items-center gap-2.5 w-full sm:w-auto">
-                  <div className="w-8 h-8 rounded-full bg-brand-green-light border border-brand-green/50 flex items-center justify-center font-extrabold text-brand-green-dark text-xs shrink-0 shadow-xs">
+                {/* Dr. J. Naveen Kumar (Orthopaedics - Green Match) */}
+                <div className="flex-1 max-w-[215px] flex items-center gap-2 px-3 py-2 rounded-xl bg-white/85 backdrop-blur-xs border border-brand-green/25 shadow-xs">
+                  <div className="w-7 h-7 rounded-full bg-brand-green-light border border-brand-green/40 flex items-center justify-center font-extrabold text-brand-green-dark text-[11px] shrink-0">
                     DN
                   </div>
-                  <div>
-                    <div className="font-heading font-extrabold text-slate-900 leading-tight">Dr. J. Naveen Kumar</div>
-                    <div className="text-[11px] text-brand-green-dark font-bold">Ortho &amp; Diabetologist</div>
+                  <div className="min-w-0">
+                    <div className="font-heading font-extrabold text-slate-900 text-xs truncate">Dr. J. Naveen Kumar</div>
+                    <div className="text-[10px] text-brand-green-dark font-bold truncate">Ortho &amp; Diabetologist</div>
                   </div>
                 </div>
 
