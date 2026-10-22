@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
-import { Phone, MessageSquare, ShieldAlert, X } from 'lucide-react';
+import { Phone, MessageSquare, ShieldAlert, X, Calendar } from 'lucide-react';
 import { HOSPITAL_INFO } from '../data/hospital';
 
-export const FloatingEmergencyButton: React.FC = () => {
+interface FloatingEmergencyButtonProps {
+  onOpenAppointmentModal?: () => void;
+}
+
+export const FloatingEmergencyButton: React.FC<FloatingEmergencyButtonProps> = ({ onOpenAppointmentModal }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -48,6 +52,23 @@ export const FloatingEmergencyButton: React.FC = () => {
               <div className="text-[10px] text-green-100 font-normal">Fast response</div>
             </div>
           </a>
+
+          {onOpenAppointmentModal && (
+            <button
+              type="button"
+              onClick={() => {
+                setExpanded(false);
+                onOpenAppointmentModal();
+              }}
+              className="w-full flex items-center gap-2.5 p-2 rounded-xl bg-brand-navy hover:bg-brand-navy-light text-white font-bold transition-colors cursor-pointer"
+            >
+              <Calendar className="w-4 h-4 text-brand-pink shrink-0" />
+              <div className="text-left">
+                <div>Book Appointment Form</div>
+                <div className="text-[10px] text-slate-300 font-normal">Fast popup request</div>
+              </div>
+            </button>
+          )}
         </div>
       )}
 
