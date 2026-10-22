@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="navyGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#242c44"/>
+      <stop offset="100%" stop-color="#191F30"/>
+    </radialGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF1A75"/>
+      <stop offset="100%" stop-color="#F0005B"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8AD442"/>
+      <stop offset="100%" stop-color="#70B82F"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38B6FF"/>
+      <stop offset="100%" stop-color="#078EE8"/>
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Dark Navy Base -->
+  <circle cx="250" cy="250" r="240" fill="url(#navyGlow)" stroke="#F0005B" stroke-width="4" stroke-opacity="0.4"/>
+  <circle cx="250" cy="250" r="230" fill="none" stroke="#70B82F" stroke-width="2" stroke-dasharray="6 4" stroke-opacity="0.6"/>
+
+  <!-- Center Emblem Group -->
+  <g transform="translate(250, 205)" filter="url(#subtleShadow)">
+    <!-- Multicoloured Family / Medical Care Iconography -->
+    <!-- Child figure (warm orange) -->
+    <circle cx="0" cy="-60" r="14" fill="#FF970F"/>
+    <path d="M -12 -42 C -12 -42, 0 -36, 12 -42 C 18 -15, -18 -15, -12 -42 Z" fill="#FF970F"/>
+
+    <!-- Mother/Caregiver figure (electric blue) -->
+    <circle cx="-38" cy="-45" r="16" fill="url(#blueGrad)"/>
+    <path d="M -54 -24 C -54 -24, -38 -15, -22 -24 C -18 8, -58 8, -54 -24 Z" fill="url(#blueGrad)"/>
+
+    <!-- Father/Guardian figure (violet) -->
+    <circle cx="38" cy="-45" r="16" fill="#712ACB"/>
+    <path d="M 22 -24 C 22 -24, 38 -15, 54 -24 C 58 8, 18 8, 22 -24 Z" fill="#712ACB"/>
+
+    <!-- Stylized 'N' Cross & Care Wings (Green and Hot Pink) -->
+    <!-- Green left wing & stroke -->
+    <path d="M -75 25 C -75 -10, -50 -25, -25 5 L -25 55 C -55 55, -75 45, -75 25 Z" fill="url(#greenGrad)"/>
+    <!-- Diagonal Connecting Blade -->
+    <path d="M -25 5 L 25 65 L 10 75 L -40 15 Z" fill="#248447"/>
+    <!-- Pink right wing & stroke -->
+    <path d="M 25 5 C 50 -25, 75 -10, 75 25 C 75 45, 55 55, 25 55 Z" fill="url(#pinkGrad)"/>
+    
+    <!-- Central Medical Cross Core -->
+    <rect x="-10" y="10" width="20" height="50" rx="6" fill="#FFFFFF"/>
+    <rect x="-25" y="25" width="50" height="20" rx="6" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Hospital Brand Text (Hot Pink & White) -->
+  <text x="250" y="340" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="34" font-weight="900" fill="#F0005B" letter-spacing="3">
+    NAVEEN
+  </text>
+  <text x="250" y="375" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="19" font-weight="800" fill="#FFFFFF" letter-spacing="2">
+    MULTI-SPECIALITY HOSPITAL
+  </text>
+  <text x="250" y="405" text-anchor="middle" font-family="'Inter', Arial, sans-serif" font-size="14" font-weight="600" fill="#70B82F" letter-spacing="3">
+    HINDUPUR • 24/7 EMERGENCY
+  </text>
+  
+  <!-- Subtle decorative stars -->
+  <circle cx="65" cy="365" r="4" fill="#FF970F"/>
+  <circle cx="435" cy="365" r="4" fill="#FF970F"/>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0F5"/>
+      <stop offset="100%" stop-color="#EDF6FF"/>
+    </linearGradient>
+    <linearGradient id="coatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="scrubGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0005B"/>
+      <stop offset="100%" stop-color="#D90050"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="480" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Medical Cross pattern -->
+  <g opacity="0.12" fill="#F0005B">
+    <rect x="40" y="50" width="8" height="24" rx="2"/>
+    <rect x="32" y="58" width="24" height="8" rx="2"/>
+    <rect x="340" y="80" width="8" height="24" rx="2"/>
+    <rect x="332" y="88" width="24" height="8" rx="2"/>
+    <rect x="60" y="260" width="8" height="24" rx="2"/>
+    <rect x="52" y="268" width="24" height="8" rx="2"/>
+    <rect x="320" y="280" width="8" height="24" rx="2"/>
+    <rect x="312" y="288" width="24" height="8" rx="2"/>
+  </g>
+
+  <!-- Circular Glow -->
+  <circle cx="200" cy="180" r="130" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="200" cy="180" r="128" fill="none" stroke="#F0005B" stroke-width="3" stroke-dasharray="8 6" opacity="0.3"/>
+
+  <!-- Doctor Silhouette / Illustration (Pediatrician) -->
+  <!-- Shoulders & Coat -->
+  <path d="M 100 480 C 100 370, 140 330, 200 330 C 260 330, 300 370, 300 480 Z" fill="url(#coatGrad)" filter="drop-shadow(0px -4px 10px rgba(0,0,0,0.06))"/>
+  
+  <!-- Inner Scrub V-Neck -->
+  <polygon points="175,330 225,330 200,390" fill="url(#scrubGrad)"/>
+
+  <!-- Stethoscope -->
+  <path d="M 165 330 C 165 410, 180 430, 200 430 C 220 430, 235 410, 235 330" fill="none" stroke="#191F30" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="200" cy="435" r="12" fill="#70B82F" stroke="#191F30" stroke-width="4"/>
+
+  <!-- Neck & Face -->
+  <rect x="180" y="250" width="40" height="90" rx="20" fill="#F8C9AA"/>
+  <ellipse cx="200" cy="200" rx="55" ry="65" fill="#FBD5BC"/>
+  
+  <!-- Hair (Female professional style) -->
+  <path d="M 140 210 C 135 130, 170 120, 200 120 C 230 120, 265 130, 260 210 C 255 190, 245 155, 200 155 C 155 155, 145 190, 140 210 Z" fill="#2E1B15"/>
+  <path d="M 140 210 C 135 240, 142 270, 148 290 C 150 250, 155 220, 160 200 Z" fill="#2E1B15"/>
+  <path d="M 260 210 C 265 240, 258 270, 252 290 C 250 250, 245 220, 240 200 Z" fill="#2E1B15"/>
+
+  <!-- Gentle smile & eyes -->
+  <path d="M 175 190 Q 185 186 193 190" fill="none" stroke="#4A342B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 207 190 Q 215 186 225 190" fill="none" stroke="#4A342B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 188 225 Q 200 237 212 225" fill="none" stroke="#D90050" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Specialty Badge -->
+  <g transform="translate(200, 435)">
+    <rect x="-140" y="-15" width="280" height="42" rx="21" fill="#191F30" stroke="#F0005B" stroke-width="2"/>
+    <text x="0" y="12" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">
+      PAEDIATRICIAN &amp; NEONATOLOGIST
+    </text>
+  </g>
+</svg>
