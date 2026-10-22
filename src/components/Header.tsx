@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Calendar, Menu, X, ShieldAlert, Clock, MapPin } from 'lucide-react';
 import { HOSPITAL_INFO } from '../data/hospital';
+import { SocialLinks } from './SocialIcons';
 
 interface HeaderProps {
   onOpenAppointmentModal?: (department?: string, doctor?: string) => void;
@@ -72,6 +73,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAppointmentModal }) => {
               </div>
               <span className="tracking-wide">{HOSPITAL_INFO.phoneFormatted}</span>
             </a>
+
+            {/* Social Media Links */}
+            <div className="hidden sm:flex items-center gap-2 pl-3 border-l border-white/20">
+              <span className="text-[10px] text-slate-300 font-medium">Follow:</span>
+              <SocialLinks variant="dark" size="sm" />
+            </div>
           </div>
 
         </div>
@@ -224,6 +231,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAppointmentModal }) => {
                   <Phone className="w-3.5 h-3.5 text-brand-pink" />
                   <span>Call Hospital: {HOSPITAL_INFO.phoneFormatted}</span>
                 </a>
+
+                {/* Social media links for mobile */}
+                <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
+                  <span className="text-xs font-semibold text-slate-600">Follow Dr. Keerthi Kids Care:</span>
+                  <SocialLinks variant="light" size="sm" />
+                </div>
               </div>
             </div>
           </div>

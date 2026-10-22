@@ -21,6 +21,11 @@ export const HOSPITAL_INFO = {
   googleMapsSearchUrl: "https://www.google.com/maps/search/?api=1&query=Naveen+Multi-Speciality+Hospital+Balaji+Nagar+Hindupur+515201",
   googleSpreadsheetUrl: "https://docs.google.com/spreadsheets/d/1sVCbNpIX2hO7XuGdphL4PiJHMFGVwDyTzeICJWLMvwM/edit?gid=0#gid=0",
   googleSheetWebhookUrl: (import.meta as any).env?.VITE_GOOGLE_SHEET_WEBHOOK_URL || "https://script.google.com/macros/s/AKfycbyTB-Pfb9a_kznpa_m1z1WCok0KokJRyz6Ny1Gbfj0owatlXCLPNUv0RDiOfDVOrKz6_A/exec",
+  socialLinks: {
+    youtube: "https://youtube.com/@drkeerthikidscare?si=Fw7JB-37SAdNMBUR",
+    instagram: "https://www.instagram.com/drkeerthikidscare?cplk=N2dmZzZrOGlzNWhh",
+    facebook: "https://www.facebook.com/share/1K3rAEbh1Z/?mibextid=wwXIfr"
+  },
   aboutSummary: "Naveen Multi-Speciality Hospital provides specialised paediatric, neonatal, orthopaedic, diabetes and trauma care. With a focus on accessible treatment, patient comfort and emergency readiness, the hospital serves individuals and families in and around Hindupur.",
   highlights: [
     "11+ years of trusted patient care in the Hindupur community",

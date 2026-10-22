@@ -1,6 +1,7 @@
 import React from 'react';
 import { Clock, GraduationCap, Award, CheckCircle2, Calendar } from 'lucide-react';
 import type { Doctor } from '../types';
+import { SocialLinks } from './SocialIcons';
 
 interface DoctorCardProps {
   doctor: Doctor;
@@ -119,7 +120,16 @@ export const DoctorCard: React.FC<DoctorCardProps> = ({ doctor, onBookConsultati
       </div>
 
       {/* Action Footer */}
-      <div className="p-6 sm:p-8 pt-0">
+      <div className="p-6 sm:p-8 pt-0 space-y-3.5">
+        {doctor.id === 'dr-keerthi' && (
+          <div className="p-3 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-center justify-between gap-2">
+            <span className="text-[11px] font-bold text-slate-600">
+              Dr. Keerthi Kids Care:
+            </span>
+            <SocialLinks variant="light" size="sm" />
+          </div>
+        )}
+
         <button
           type="button"
           onClick={() => onBookConsultation(doctor.name)}

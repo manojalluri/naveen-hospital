@@ -1,6 +1,7 @@
 import React from 'react';
 import { Phone, Mail, MapPin, MessageSquare, ShieldAlert, ArrowUp, Navigation } from 'lucide-react';
 import { HOSPITAL_INFO } from '../data/hospital';
+import { SocialLinks } from './SocialIcons';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -67,6 +68,14 @@ export const Footer: React.FC = () => {
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-pink/20 text-brand-pink text-xs font-bold border border-brand-pink/30">
               <ShieldAlert className="w-3.5 h-3.5" />
               <span>24/7 Emergency Support Hotline</span>
+            </div>
+
+            {/* Social Media Links */}
+            <div className="pt-2">
+              <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-2">
+                Follow Dr. Keerthi Kids Care
+              </span>
+              <SocialLinks variant="dark" />
             </div>
           </div>
 
@@ -187,6 +196,11 @@ export const Footer: React.FC = () => {
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div>
             &copy; {currentYear} Naveen Multi-Speciality Hospital, Hindupur. All rights reserved.
+          </div>
+
+          <div className="flex items-center gap-2.5">
+            <span className="text-slate-400 text-xs hidden md:inline">Connect:</span>
+            <SocialLinks variant="dark" size="sm" />
           </div>
 
           <button
