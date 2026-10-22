@@ -10,8 +10,21 @@ export const FloatingEmergencyButton: React.FC<FloatingEmergencyButtonProps> = (
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <aside aria-label="Emergency Contact Options" className="fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2">
-      {/* Expanded quick contact actions */}
+    <aside aria-label="Emergency and WhatsApp Quick Contact" className="fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2.5">
+      {/* Separate WhatsApp Button at the top of the Emergency button */}
+      <a
+        href={HOSPITAL_INFO.whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with hospital on WhatsApp"
+        className="flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-full bg-brand-green text-white font-extrabold text-[11px] sm:text-xs shadow-xl shadow-brand-green/35 hover:bg-brand-green-dark hover:scale-105 active:scale-95 transition-all border-2 border-white group"
+        title="Open WhatsApp chat"
+      >
+        <MessageSquare className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current shrink-0" />
+        <span>WhatsApp</span>
+      </a>
+
+      {/* Expanded quick contact actions (WhatsApp removed as requested) */}
       {expanded && (
         <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 p-3 mb-1 space-y-2 animate-fade-in w-64 text-xs">
           <div className="flex items-center justify-between pb-2 border-b border-slate-100">
@@ -37,19 +50,6 @@ export const FloatingEmergencyButton: React.FC<FloatingEmergencyButtonProps> = (
             <div className="text-left">
               <div>Call Emergency</div>
               <div className="text-[10px] text-pink-100 font-normal">{HOSPITAL_INFO.phoneFormatted}</div>
-            </div>
-          </a>
-
-          <a
-            href={HOSPITAL_INFO.whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full flex items-center gap-2.5 p-2 rounded-xl bg-brand-green text-white font-bold hover:bg-brand-green-dark transition-colors"
-          >
-            <MessageSquare className="w-4 h-4 shrink-0" />
-            <div className="text-left">
-              <div>WhatsApp Desk</div>
-              <div className="text-[10px] text-green-100 font-normal">Fast response</div>
             </div>
           </a>
 

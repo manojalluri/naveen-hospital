@@ -180,6 +180,14 @@ export const Footer: React.FC = () => {
                 </a>
               </div>
 
+              {/* Social Media Links under Hospital Contact */}
+              <div className="pt-3 border-t border-white/10 mt-3">
+                <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-2.5">
+                  Follow Dr. Keerthi Kids Care
+                </span>
+                <SocialLinks variant="dark" />
+              </div>
+
             </div>
           </div>
 
@@ -198,9 +206,18 @@ export const Footer: React.FC = () => {
             &copy; {currentYear} Naveen Multi-Speciality Hospital, Hindupur. All rights reserved.
           </div>
 
-          <div className="flex items-center gap-2.5">
-            <span className="text-slate-400 text-xs hidden md:inline">Connect:</span>
-            <SocialLinks variant="dark" size="sm" />
+          {/* Social Sprout Credits Link */}
+          <div className="flex items-center gap-1.5 text-xs text-slate-400">
+            <span>Developed by</span>
+            <a
+              href="https://www.instagram.com/socialsprout_official?xtok=OGNnbDUwNndxdmpy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-brand-pink hover:text-white underline decoration-brand-pink/50 hover:decoration-white transition-colors"
+              title="Visit Social Sprout on Instagram"
+            >
+              Social Sprout
+            </a>
           </div>
 
           <button
