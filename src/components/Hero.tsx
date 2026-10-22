@@ -105,7 +105,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppointmentModal }) => {
             <div className="relative w-full max-w-lg mx-auto flex flex-col items-center">
               
               <img 
-                src="/images/Back-to-Back Doctors with Rainbow Medical Arch.png" 
+                src="/images/Back-to-Back Doctors in a Healthcare Arch.png" 
                 alt="Dr. Keerthi S. and Dr. J. Naveen Kumar - Naveen Multi-Speciality Hospital Hindupur" 
                 className="w-full h-auto max-h-[520px] object-contain drop-shadow-2xl transition-transform duration-300 hover:scale-[1.01]"
                 loading="eager"
