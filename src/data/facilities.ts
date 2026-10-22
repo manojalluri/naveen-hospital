@@ -17,10 +17,10 @@ export const FACILITIES: Facility[] = [
   },
   {
     id: "laboratory-services",
-    title: "Laboratory Services",
-    description: "On-site pathological and diagnostic sample testing for fast turnaround on essential patient reports.",
+    title: "Completely Automated Laboratory",
+    description: "Fully automated, on-site clinical pathology and diagnostic testing equipment ensuring swift and high-precision patient reports.",
     iconName: "FlaskConical",
-    highlight: "On-Premise"
+    highlight: "Completely Automated"
   },
   {
     id: "radiology-services",

@@ -93,32 +93,32 @@ export const SERVICES: Service[] = [
   },
   {
     id: "vaccination",
-    title: "Vaccination & Immunization",
+    title: "Needle-Free Vaccination & Immunization",
     category: "paediatric",
-    description: "Scheduled pediatric and adult vaccinations following national and WHO immunization schedules.",
+    description: "Scheduled pediatric and adult vaccinations featuring advanced needle-free vaccination technology for a gentle, pain-free experience.",
     bulletPoints: [
-      "Routine infant and childhood immunization schedules",
-      "Preventive vaccines for adolescents and high-risk adults",
-      "Safe storage and strict cold-chain maintenance",
-      "Painless and needleless options (enquire to confirm availability)"
+      "Advanced needle-free vaccination for comfortable, tear-free child immunization",
+      "Routine infant, toddler, and adolescent vaccination schedules (WHO & IAP aligned)",
+      "Preventive vaccines and boosters for high-risk adults and seniors",
+      "Strict cold-chain storage to guarantee maximum vaccine safety & efficacy"
     ],
     iconName: "Syringe",
-    badge: "Enquire for Needleless",
+    badge: "Needle-Free Vaccination",
     enquiryDepartment: "Vaccination"
   },
   {
     id: "diagnostics-laboratory",
-    title: "Diagnostics & Laboratory",
+    title: "Completely Automated Laboratory",
     category: "clinical",
-    description: "Fast, dependable pathological tests and diagnostic screenings to assist swift and precise medical decisions.",
+    description: "Completely automated in-house clinical pathology and diagnostic laboratory delivering swift, high-precision test results.",
     bulletPoints: [
-      "Routine hematology, biochemistry, and urine analysis",
-      "Blood sugar monitoring and infection panels",
-      "Diagnostic support for pediatric and emergency cases",
-      "Prompt sample processing and report turnaround"
+      "Completely automated biochemistry, hematology, and clinical pathology analyzers",
+      "Fast-track diagnostic testing for emergency, pediatric, and trauma cases",
+      "Comprehensive diabetes panels, blood sugar profiles, and infection screenings",
+      "Prompt sample processing with verified, accurate report turnaround"
     ],
     iconName: "FlaskConical",
-    badge: "In-House Lab",
+    badge: "Completely Automated",
     enquiryDepartment: "Diagnostics and Laboratory"
   },
   {

@@ -8,8 +8,8 @@ export default {
     extend: {
       colors: {
         brand: {
-          pink: '#F0005B',
-          'pink-deep': '#D90050',
+          pink: '#E02D6C',
+          'pink-deep': '#C41C58',
           'pink-light': '#FFF0F5',
           green: '#70B82F',
           'green-dark': '#248447',

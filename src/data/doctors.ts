@@ -20,7 +20,7 @@ export const DOCTORS: Doctor[] = [
     areasOfExpertise: [
       "Neonatal intensive care (NICU)",
       "Paediatric intensive care (PICU)",
-      "Childhood vaccination & immunization",
+      "Needle-free vaccination & childhood immunization",
       "Growth monitoring & developmental assessment",
       "Parent guidance for children's everyday health",
       "Comprehensive healthcare for children aged 0–18 years"

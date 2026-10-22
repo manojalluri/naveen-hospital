@@ -28,7 +28,7 @@ export const FAQS: FAQItem[] = [
   },
   {
     question: "Which medical services are available specifically for children and newborns?",
-    answer: "Under the care of Dr. Keerthi S. (Paediatrician & Neonatologist), we provide complete pediatric outpatient consultations (ages 0–18), specialized neonatal intensive care (NICU), pediatric intensive care (PICU), growth & developmental monitoring, vaccination schedules (including enquiry options for painless/needleless vaccinations), and dedicated parent health counseling.",
+    answer: "Under the care of Dr. Keerthi S. (Paediatrician & Neonatologist), we provide complete pediatric outpatient consultations (ages 0–18), specialized neonatal intensive care (NICU), pediatric intensive care (PICU), growth & developmental monitoring, needle-free vaccination options for gentle immunization, and dedicated parent health counseling.",
     category: "Pediatrics"
   },
   {

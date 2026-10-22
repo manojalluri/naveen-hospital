@@ -164,7 +164,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectServiceForEnquiry })
         {/* Clinical Disclaimer Notice */}
         <div className="mt-12 p-4 rounded-xl bg-white border border-slate-200/80 text-center max-w-3xl mx-auto text-xs text-slate-500">
           <p>
-            * Note: Medical diagnostic tests, surgical interventions, and specialized procedures (including PRP therapy and painless vaccination) are subject to clinical evaluation and availability. Please consult our specialist doctors to determine clinical suitability.
+            * Note: Medical diagnostic tests, surgical interventions, and specialized procedures (including PRP therapy and needle-free vaccination) are subject to clinical evaluation and availability. Please consult our specialist doctors to determine clinical suitability.
           </p>
         </div>
 
