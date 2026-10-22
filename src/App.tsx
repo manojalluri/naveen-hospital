@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Statistics } from './components/Statistics';
@@ -19,6 +19,20 @@ export function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDepartment, setSelectedDepartment] = useState<string>('');
   const [selectedDoctor, setSelectedDoctor] = useState<string>('');
+
+  // Automatically display the appointment form pop-up after 8 seconds
+  useEffect(() => {
+    const hasSeenAutoPopup = sessionStorage.getItem('hasSeenHospitalPopup');
+
+    const timer = setTimeout(() => {
+      if (!hasSeenAutoPopup) {
+        setIsModalOpen(true);
+        sessionStorage.setItem('hasSeenHospitalPopup', 'true');
+      }
+    }, 8000); // 8 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const openAppointmentModal = (department?: string, doctor?: string) => {
     if (department) setSelectedDepartment(department);
